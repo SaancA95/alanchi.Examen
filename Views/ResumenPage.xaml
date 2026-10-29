@@ -5,31 +5,31 @@
              Title="ResumenPage">
     <ScrollView>
         <VerticalStackLayout Spacing="10" Padding="20">
-            <Label x:Name="lblUsuario"/>
+            <Label x:Name="lblUsuario" Style="{StaticResource UsuarioGym}" />
             <Label Text="RESUMEN" FontSize="22" HorizontalOptions="Fill" HorizontalTextAlignment="Center" />
             <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,*" RowSpacing="8">
-                <Label Text="Nombre"  Grid.Row="0" />
+                <Label Text="Nombre" Style="{StaticResource EtiquetaGym}" Grid.Row="0" />
                 <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1" />
-                <Label Text="Apellido"  Grid.Row="1" />
+                <Label Text="Apellido" Style="{StaticResource EtiquetaGym}" Grid.Row="1" />
                 <Label x:Name="lblApellido" Grid.Row="1" Grid.Column="1" />
-                <Label Text="Edad"  Grid.Row="2" />
+                <Label Text="Edad" Style="{StaticResource EtiquetaGym}" Grid.Row="2" />
                 <Label x:Name="lblEdad" Grid.Row="2" Grid.Column="1" />
-                <Label Text="Fecha de inicio"  Grid.Row="3" />
+                <Label Text="Fecha de inicio" Style="{StaticResource EtiquetaGym}" Grid.Row="3" />
                 <Label x:Name="lblFecha" Grid.Row="3" Grid.Column="1" />
-                <Label Text="Plan"  Grid.Row="4" />
+                <Label Text="Plan" Style="{StaticResource EtiquetaGym}" Grid.Row="4" />
                 <Label x:Name="lblPlan" Grid.Row="4" Grid.Column="1" />
-                <Label Text="Casillero"  Grid.Row="5" />
+                <Label Text="Casillero" Style="{StaticResource EtiquetaGym}" Grid.Row="5" />
                 <Label x:Name="lblCasillero" Grid.Row="5" Grid.Column="1" />
-                <Label Text="Monto Inicial"  Grid.Row="6" />
+                <Label Text="Monto Inicial" Style="{StaticResource EtiquetaGym}" Grid.Row="6" />
                 <Label x:Name="lblMonto" Grid.Row="6" Grid.Column="1" />
-                <Label Text="Pago mensual"  Grid.Row="7" />
+                <Label Text="Pago mensual" Style="{StaticResource EtiquetaGym}" Grid.Row="7" />
                 <Label x:Name="lblPago" Grid.Row="7" Grid.Column="1" />
-                <Label Text="Pago Total"  Grid.Row="8" />
+                <Label Text="Pago Total" Style="{StaticResource EtiquetaGym}" Grid.Row="8" />
                 <Label x:Name="lblTotal" Grid.Row="8" Grid.Column="1" />
             </Grid>
-            <Button Text="Nuevo registro" x:Name="OnNuevo"  Clicked="OnNuevo_Clicked" />
-            <Button Text="Cerrar sesión" x:Name="OnCerrar"  Clicked="OnCerrar_Clicked" />
-            <Button Text="Guardar" x:Name="OnGuardar" Clicked="OnGuardar_Clicked"/>
+            <Button Text="Nuevo registro" x:Name="OnNuevo" Style="{StaticResource BotonGym}"  Clicked="OnNuevo_Clicked" />
+            <Button Text="Cerrar sesión" x:Name="OnCerrar" Style="{StaticResource BotonGym}"  Clicked="OnCerrar_Clicked" />
+            <Button Text="Guardar" x:Name="OnGuardar" Style="{StaticResource BotonGym}" Clicked="OnGuardar_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 

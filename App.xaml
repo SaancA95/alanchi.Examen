@@ -4,12 +4,19 @@
              xmlns:local="clr-namespace:alanchi.Examen"
              x:Class="alanchi.Examen.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <Style x:Key="BotonGym" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#512BD4" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="8" />
+        </Style>
+        <Style x:Key="EtiquetaGym" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="VerticalOptions" Value="Center" />
+        </Style>
+        <Style x:Key="UsuarioGym" TargetType="Label">
+            <Setter Property="TextColor" Value="Gray" />
+            <Setter Property="FontSize" Value="14" />
+        </Style>
 
 
     </Application.Resources>

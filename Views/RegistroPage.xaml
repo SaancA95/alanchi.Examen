@@ -5,22 +5,22 @@
              Title="RegistroPage">
     <ScrollView>
         <VerticalStackLayout Spacing="10" Padding="20">
-            <Label x:Name="lblUsuario" />
-            <Label Text="REGISTRO"  FontSize="22"
-                   HorizontalOptions="Fill" HorizontalTextAlignment="Center" />
+            <Label x:Name="lblUsuario" Style="{StaticResource UsuarioGym}" />
+            <Label Text="REGISTRO" TextColor="Blue" FontSize="22"
+            HorizontalOptions="Fill" HorizontalTextAlignment="Center" />
             <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*,*" ColumnSpacing="5">
-                <Label Text="Nombre"  Grid.Row="0" Grid.Column="0" />
-                <Label Text="Apellido"  Grid.Row="0" Grid.Column="1" />
-                <Label Text="Edad"  Grid.Row="0" Grid.Column="2" />
+                <Label Text="Nombre" Style="{StaticResource EtiquetaGym}" Grid.Row="0" Grid.Column="0" />
+                <Label Text="Apellido" Style="{StaticResource EtiquetaGym}" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Edad" Style="{StaticResource EtiquetaGym}" Grid.Row="0" Grid.Column="2" />
                 <Entry x:Name="entNombre" Placeholder="Ingresar Nombre" Grid.Row="1" Grid.Column="0" />
                 <Entry x:Name="entApellido" Placeholder="Ingresar Apellido" Grid.Row="1" Grid.Column="1" />
                 <Entry x:Name="entEdad" Placeholder="Ingresar Edad" Keyboard="Numeric" MaxLength="3"
-                       TextChanged="OnEdadChanged" Grid.Row="1" Grid.Column="2" />
+                TextChanged="OnEdadChanged" Grid.Row="1" Grid.Column="2" />
             </Grid>
             <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*,2*" RowSpacing="10" ColumnSpacing="10">
-                <Label Text="Fecha de inicio"  Grid.Row="0" Grid.Column="0" />
+                <Label Text="Fecha de inicio" Style="{StaticResource EtiquetaGym}" Grid.Row="0" Grid.Column="0" />
                 <DatePicker x:Name="dpFecha" Grid.Row="0" Grid.Column="1" />
-                <Label Text="Plan"  Grid.Row="1" Grid.Column="0" />
+                <Label Text="Plan" Style="{StaticResource EtiquetaGym}" Grid.Row="1" Grid.Column="0" />
                 <Picker x:Name="pkPlan" Title="Seleccione plan" Grid.Row="1" Grid.Column="1">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
@@ -31,16 +31,17 @@
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>
-                <Label Text="Casillero"  Grid.Row="2" Grid.Column="0" />
+                <Label Text="Casillero" Style="{StaticResource EtiquetaGym}" Grid.Row="2" Grid.Column="0" />
                 <Switch x:Name="swCasillero" HorizontalOptions="Start" Grid.Row="2" Grid.Column="1" />
-                <Label Text="Monto Inicial"  Grid.Row="3" Grid.Column="0" />
+                <Label Text="Monto Inicial" Style="{StaticResource EtiquetaGym}" Grid.Row="3" Grid.Column="0" />
                 <Entry x:Name="entMonto" Placeholder="Entre 120 y 600" Keyboard="Numeric" Grid.Row="3" Grid.Column="1" />
-                <Button Text="Calcular Pago mensual" x:Name="OnCalcular"  Clicked="OnCalcular_Clicked"
-                        Grid.Row="4" Grid.Column="0" />
+                <Button Text="Calcular Pago mensual" x:Name="OnCalcular" Style="{StaticResource BotonGym}" Clicked="OnCalcular_Clicked"
+                 Grid.Row="4" Grid.Column="0" />
                 <Entry x:Name="entPago" Placeholder="Pago mensual" IsEnabled="False" Grid.Row="4" Grid.Column="1" />
             </Grid>
-            <Button Text="Ver Resumen" x:Name="OnResumen"  Clicked="OnResumen_Clicked" />
+            <Button Text="Ver Resumen" x:Name="OnResumen" Style="{StaticResource BotonGym}" Clicked="OnResumen_Clicked" />
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>

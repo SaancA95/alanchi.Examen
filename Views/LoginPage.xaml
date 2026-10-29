@@ -6,18 +6,19 @@
     <ScrollView>
         <VerticalStackLayout Spacing="10" Padding="20">
             <Image Source="logo.jpg" HeightRequest="120" HorizontalOptions="Center" />
-            <Label Text="GIMNASIO - ACCESO"  FontSize="26"
+            <Label Text="GIMNASIO - ACCESO" TextColor="Purple" FontSize="26"
                    HorizontalTextAlignment="Center" HorizontalOptions="Fill" FontAttributes="Bold" />
             <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,2*" RowSpacing="10" ColumnSpacing="10">
-                <Label Text="Usuario"  Grid.Row="0" Grid.Column="0" />
+                <Label Text="Usuario" Style="{StaticResource EtiquetaGym}" Grid.Row="0" Grid.Column="0" />
                 <Entry x:Name="entUsuario" Placeholder="Usuario" Grid.Row="0" Grid.Column="1" />
-                <Label Text="Contraseña"  Grid.Row="1" Grid.Column="0" />
+                <Label Text="Contraseña" Style="{StaticResource EtiquetaGym}" Grid.Row="1" Grid.Column="0" />
                 <Entry x:Name="entClave" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1" />
-                <Button Text="Iniciar sesión" x:Name="OnLogin"  Clicked="OnLogin_Clicked"
+                <Button Text="Iniciar sesión" x:Name="OnLogin" Style="{StaticResource BotonGym}" Clicked="OnLogin_Clicked"
                         Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" />
             </Grid>
-            <Button Text="Acerca de" x:Name="OnAcercaDe" Clicked="OnAcercaDe_Clicked" />
+            <Button Text="Acerca de" x:Name="OnAcercaDe" Style="{StaticResource BotonGym}" Clicked="OnAcercaDe_Clicked" />
         </VerticalStackLayout>
     </ScrollView>
+
 
 </ContentPage>

@@ -5,10 +5,10 @@
              Title="AcercaDePage">
     <VerticalStackLayout Spacing="10" Padding="20">
         <Image Source="yo.jpg" HeightRequest="150" HorizontalOptions="Center" />
-        <Label Text="Nombre: Anthony Lanchi"  />
-        <Label Text="Carrera: Sistemas Informacion"  />
-        <Label Text="Paralelo: A" />
-        <Button Text="Volver" x:Name="OnVolver"  Clicked="OnVolver_Clicked" />
+        <Label Text="Nombre: Anthony Lanchi" Style="{StaticResource EtiquetaGym}" />
+        <Label Text="Carrera: Sistemas Informacion" Style="{StaticResource EtiquetaGym}" />
+        <Label Text="Paralelo: A" Style="{StaticResource EtiquetaGym}" />
+        <Button Text="Volver" x:Name="OnVolver" Style="{StaticResource BotonGym}" Clicked="OnVolver_Clicked" />
     </VerticalStackLayout>
 
 </ContentPage>
